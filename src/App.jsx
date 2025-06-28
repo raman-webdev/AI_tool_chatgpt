@@ -4,7 +4,7 @@ import { URL } from './constant';
 const App = () => {
 
   const [question, setQuestion] = useState("");
-  const [result, setResult] = useState(undefined)
+  const [result, setResult] = useState("Your answer is here!")
   
  const payload = {
     "contents": [
@@ -35,7 +35,7 @@ const App = () => {
 
         {/* right-section */}
         <div className='col-span-4 p-10  '>
-              <div className='container h-[550px] py-10'>
+              <div className='container h-[550px] py-10 overflow-auto'>
               {result}
               </div>
                <div className='bg-zinc-800-700 border-2 rounded-2xl border-zinc-700  m-auto  flex justify-between px-4'>
