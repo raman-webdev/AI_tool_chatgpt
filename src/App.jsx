@@ -3,33 +3,31 @@ import React from 'react'
 const App = () => {
   return (
     <>
-      <div className='grid grid-cols-5 h-screen text-center text-white'>
-        
-        {/* Sidebar */}
-        <div className='col-span-1 bg-zinc-800'>
-          hello
+      <div className='grid grid-cols-5 text-white text-center h-screen'> 
+        {/* left-section */}
+        <div className='col-span-1 py-10 bg-zinc-800'>
+          <p>Hello</p>
         </div>
 
-        {/* Main Content */}
-        <div className='col-span-4 flex flex-col justify-center items-center bg-gray-900'>
+        {/* right-section */}
+        <div className='col-span-4 p-10  '>
+              <div className='container h-[550px] py-10'>
+                your answer is here
+              </div>
+               <div className='bg-zinc-800-700 border-2 rounded-2xl border-zinc-700 h-16 w-[660px] m-auto  flex justify-between px-4'>
+               <input 
+              type="text" 
+              placeholder='Ask here' 
+              
+              />
+              <button>Ask</button>
+               </div>
 
-          {/* Upper Section */}
-          <div className='h-[550px] w-full flex items-center justify-center'>
-            {/* Your centered content here */}
-            <p>Centered Content</p>
-          </div>
+          <div>
 
-          {/* Input Section */}
-          <div className='w-full bg-fuchsia-400 flex justify-center items-center gap-2 p-4'> 
-            <input
-              type="text"
-              placeholder='Ask Here'
-              className='p-2 rounded text-black'
-            />
-            <button className='bg-black text-white px-4 py-2 rounded'>Ask</button>
           </div>
         </div>
-      </div>
+      </div>  
     </>
   )
 }
